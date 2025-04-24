@@ -1,6 +1,6 @@
 {
   "name": "@notrezponding/cap-rounded-corners",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Capacitor plugin to detect Android device's rounded corner radius",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
@@ -35,7 +35,8 @@
     "@types/node": "^18.0.0"
   },
   "peerDependencies": {
-    "@capacitor/core": "^5.0.0"
+    "@capacitor/core": "^5.0.0",
+    "@capacitor/android": "^5.0.0"
   },
   "files": [
     "dist/",

@@ -10,7 +10,7 @@ import android.os.Build;
 import android.view.Display;
 import android.view.WindowManager;
 
-@CapacitorPlugin(name = "AndroidCorner")
+@CapacitorPlugin(name = "RoundedCorners")
 public class AndroidCornerPlugin extends Plugin {
 
     @PluginMethod
