@@ -1,6 +1,6 @@
-import { registerPlugin } from '@capacitor/core';
+import { registerPlugin } from "@capacitor/core";
 
-export interface AndroidCornerPlugin {
+export interface RoundedCornersPlugin {
   getCornerRadius(): Promise<{
     cornerRadius: number;
     success: boolean;
@@ -8,6 +8,6 @@ export interface AndroidCornerPlugin {
   }>;
 }
 
-const AndroidCorner = registerPlugin<AndroidCornerPlugin>('AndroidCorner');
+const RoundedCorners = registerPlugin<RoundedCornersPlugin>("RoundedCorners");
 
-export default AndroidCorner;
+export default RoundedCorners;
