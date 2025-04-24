@@ -1,0 +1,62 @@
+{
+  "name": "@notrezponding/cap-rounded-corners",
+  "version": "1.0.0",
+  "description": "Capacitor plugin to detect Android device's rounded corner radius",
+  "main": "dist/plugin.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
+  "author": {
+    "name": "NotRezponding",
+    "email": "dwikialfian92@gmail.com",
+    "url": "https://notrezponding.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotRezponding/cap-rounded-corners.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NotRezponding/cap-rounded-corners/issues"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@capacitor/core": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.0",
+    "rimraf": "^5.0.0",
+    "@capacitor/android": "^5.0.0",
+    "@types/node": "^18.0.0"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^5.0.0"
+  },
+  "files": [
+    "dist/",
+    "android/",
+    "ios/",
+    "android-corner-plugin.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "android",
+    "corner",
+    "rounded",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "android": {
+      "src": "android"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
