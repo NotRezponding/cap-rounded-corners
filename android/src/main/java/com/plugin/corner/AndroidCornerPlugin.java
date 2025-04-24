@@ -28,11 +28,8 @@ public class AndroidCornerPlugin extends Plugin {
                     );
                 
                 // Convert pixels to DP
-                float cornerRadiusDp = TypedValue.applyDimension(
-                    TypedValue.COMPLEX_UNIT_PX,
-                    cornerRadiusPx,
-                    getActivity().getResources().getDisplayMetrics()
-                );
+                float density = getActivity().getResources().getDisplayMetrics().density;
+                float cornerRadiusDp = cornerRadiusPx / density;
                 
                 ret.put("cornerRadius", cornerRadiusDp);
                 ret.put("cornerRadiusPx", cornerRadiusPx);
